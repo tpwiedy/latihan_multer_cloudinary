@@ -11,7 +11,7 @@ const uploadImage = async (req, res) => {
       product_image_url: image_url,
     });
 
-    res.json({
+    res.status(201).json({
       success: 1,
       data: product,
     });
